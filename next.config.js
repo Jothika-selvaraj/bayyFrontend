@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
   images: {
-    domains: ['localhost'], // Add any other domains you need
-  },
+    domains: ['your-domain-if-any'],
+    unoptimized: true
+  }
 }
 
 module.exports = nextConfig
